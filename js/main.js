@@ -51,8 +51,11 @@ document.getElementById("resetBut").addEventListener("click", function () {
     resetPuzzlePieces();
 });
 
-
-
+// Event listeners
+theButtons.forEach(button => button.addEventListener("click", changeBGImage));
+puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
+dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
+dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
 
 // Drag back to drag zone
 puzzleBoard.addEventListener("dragstart", function (e) {
@@ -62,10 +65,3 @@ puzzleBoard.addEventListener("dragstart", function (e) {
         document.querySelector(".puzzle-pieces").appendChild(e.target);
     }
 });
-
-// Event listeners
-theButtons.forEach(button => button.addEventListener("click", changeBGImage));
-puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
-dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
-dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
-
