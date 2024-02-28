@@ -47,7 +47,7 @@ function resetPuzzlePieces() {
 document.getElementById("resetBut").addEventListener("click", function () {
     // Reset background image
     puzzleBoard.style.backgroundImage = '';
-    // Reset puzzle pieces
+// Reset puzzle pieces
     resetPuzzlePieces();
 });
 
@@ -55,13 +55,12 @@ document.getElementById("resetBut").addEventListener("click", function () {
 
 // Drag back to drag zone
 puzzleBoard.addEventListener("dragstart", function (e) {
-    // Check if the target is a puzzle piece
+// Check if the target is a puzzle piece
     if (e.target.classList.contains("puzzle-image")) {
-        // Reparent the puzzle piece to the drag zone
+// Reparent the puzzle piece to the drag zone
         document.querySelector(".puzzle-pieces").appendChild(e.target);
     }
 });
-
 
 
 // Event listeners
