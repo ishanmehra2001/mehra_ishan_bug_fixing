@@ -122,20 +122,20 @@ function changeBGImage() {
 	  resetGame();
 
    
-}
+ }
 
  // Update puzzle piece images accordingly
     // puzzlePieces.forEach((piece, index) => {
     //     piece.src = `images/${piece.alt}${this.id}.jpg`;
     // });
 	
-theButtons.forEach(button => button.addEventListener("click", changeBGImage));
+    theButtons.forEach(button => button.addEventListener("click", changeBGImage));
 
-// add the drag event handling to the puzzle pieces
-puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
+ // add the drag event handling to the puzzle pieces
+   puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
 
-// add the dragover AND the drop event handling to the drop zones
-dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
+ // add the dragover AND the drop event handling to the drop zones
+    dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
 
-// add the drop event handling
-dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
+ // add the drop event handling
+     dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
