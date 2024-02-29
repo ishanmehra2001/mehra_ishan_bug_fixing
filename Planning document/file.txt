@@ -1,0 +1,23 @@
+plan to resolve bugs in steps
+
+1.	Identifing the bugs:
+	Identify two bugs:
+	Multiple puzzle pieces can be dropped into one drop zone.
+    Puzzle pieces remain in drop zones when resetting the game or changing the puzzle.
+2.	Fixing the First Bug:
+	Update the handleDrop function:
+	neede to make sure if the drop-zone already contains a puzzle piece.
+	If it does, prevent dropping the new piece.
+	If no, allow dropping the new piece and replace any existing piece.
+3.	Fixing the Second Bug:
+	Create a new function, say reset
+	Reparenting all puzzle pieces from drop zones back to the puzzle-pieces container (drag-zone).
+4.	Implementation:
+	Modifying the handleDrop function to incorporate the check for existing puzzle pieces.
+	Create and call the resetPuzzlePieces function when resetting the game or changing the puzzle.
+5.	Refinement:
+	Debug and refine code if any issues arise during testing.
+6.	Documentation:
+	Document changes made for future reference.
+
+This plan outlines the steps needed to address the bugs and improve the puzzle game's functionality.
