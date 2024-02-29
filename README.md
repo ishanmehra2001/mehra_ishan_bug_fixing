@@ -6,17 +6,16 @@ This is a simple drag and drop puzzle game built using HTML, CSS, and JavaScript
 ### Features
 Drag and drop functionality for puzzle pieces.
 Puzzle background can be changed by clicking on thumbnail buttons.
-Reset button to reset the game.
+.
 ### Bugs Fixed
-Preventing multiple pieces in one drop zone: Implemented functionality to prevent dropping multiple puzzle pieces into the same drop zone.
+Preventing multiple pieces in one drop zone: added functionality to prevent dropping multiple puzzle pieces into the same drop zone.
 Removing pieces on reset/change: Added functionality to remove puzzle pieces from drop zones when resetting the game or changing the puzzle.
 ### Usage
 Clone the repository.
 Open index.html in a web browser to play the game.
 Click on thumbnail buttons to change the puzzle background.
-Click on the Reset button to reset the game.
 ### Credits
-This assignments was continued in given in-class files. Credits to the Professor Tina Vandervecht and Ishan Mehra.
+This assignments was continued in given in-class files. So, Credits to the Professor Tina Vandervecht and Ishan Mehra.
 
 ### License
 Copyright (c) 2012-2024 Ishan-Mehra
