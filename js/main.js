@@ -48,8 +48,7 @@ function handleDrop(e) {
     }
 }
 
-// 
-// 
+
 // function handleDrop(e) { 
 //     e.preventDefault();
 //     console.log('dropped something on me');
@@ -139,3 +138,29 @@ function changeBGImage() {
 
  // add the drop event handling
      dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
+// Reset button click event
+document.getElementById("resetBut").addEventListener("click", function () {
+    // Reset background image
+    puzzleBoard.style.backgroundImage = '';
+// Reset puzzle pieces
+    resetPuzzlePieces();
+});
+
+
+
+// Drag back to drag zone
+puzzleBoard.addEventListener("dragstart", function (e) {
+// Check if the target is a puzzle piece
+    if (e.target.classList.contains("puzzle-image")) {
+// Reparent the puzzle piece to the drag zone
+        document.querySelector(".puzzle-pieces").appendChild(e.target);
+    }
+});
+
+
+// Event listeners
+theButtons.forEach(button => button.addEventListener("click", changeBGImage));
+puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
+dropZones.forEach(zone => zone.addEventListener("dragover", handleDragOver));
+dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
+
